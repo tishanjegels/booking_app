@@ -1,0 +1,58 @@
+body{
+    background-image: url(https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAJGJiN2YxMGRmLTQ5ODktNGI3My1hYjRlLTljZDdmZmQwZWIwZQ?fit=crop&auto=enhance,format,compress&q=80&crop=focalpoint&fp-y=0.5&w=1920&h=1080);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    margin: 40px;
+    padding: 20px
+}
+
+#firstname{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#surname{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#email{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#hotelname{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#dates{
+    width: 4cm;
+    height: 0.8cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#submit{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    background-color: skyblue;
+    font-weight: bold;
+    font-size: medium;
+}
