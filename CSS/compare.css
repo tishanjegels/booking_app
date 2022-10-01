@@ -1,16 +1,17 @@
 body{
-    background-image: url(https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAJGJiN2YxMGRmLTQ5ODktNGI3My1hYjRlLTljZDdmZmQwZWIwZQ?fit=crop&auto=enhance,format,compress&q=80&crop=focalpoint&fp-y=0.5&w=1920&h=1080);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
+    background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
 }
 
 h1{
     text-align: center;
+    padding: 20px;
 }
 
 form{
-    margin: 40px;
-    padding: 20px
+    margin: 30px;
+    padding: 15px
 }
 
 #firstname{
@@ -34,7 +35,7 @@ form{
     padding-left: 20px;
 }
 
-#hotelname{
+#select_hotel{
     width: 10cm;
     height: 1cm;
     border-radius: 20px;
@@ -56,3 +57,32 @@ form{
     font-weight: bold;
     font-size: medium;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 30px;
+}
+
+img{
+    width: 100%;
+}
+
+/* screen size*/
+@media only screen and (min-width:600px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }
+  
+  @media only screen and (min-width:768px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }
+  
+  @media only screen and (min-width:922px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }

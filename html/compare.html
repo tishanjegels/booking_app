@@ -9,45 +9,150 @@
 
     <link rel="stylesheet" href="../CSS/compare.css">
 
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
+
     <h1>Hotel Reservation</h1>
 
-    <form>
-        <!--First Name-->
-        <label for="firstname">First Name:</label><br><br>
-        <input type="text" id="firstname" placeholder="Please enter your first name" required><br><br>
+    <!--Carsoul-->
+    <div class="grid-container">
 
-        <!--Surname-->
-        <label for="surname">Surname:</label><br><br>
-        <input type="text" id="surname" placeholder="Please enter your surname" required><br><br>
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
 
-        <!--Email Address-->
-        <label for="email">Email Address:</label><br><br>
-        <input type="text" id="email" placeholder="Please enter your email address" required><br><br>
+            <div class="carousel-inner">
 
-        <!--Hotel-->
-        <label for="hotel">Select your hotel:</label><br><br>
-        <input type="text" id="hotelname" placeholder="Name of hotel" required><br><br>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/city-lodge-bloemfontein.jpg"
+                        alt="City Lodge Bloemfontein">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>City Lodge Bloemfontein</h5>
+                    </div>
+                </div>
 
-        <!--Check-Int-->
-        <label for="checkin">Check-In:</label><br><br>
-        <input type="date" id="dates" required> <br><br>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/gameview.jpg" alt="Game View Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Game View Lodge, Vryburg</h5>
+                    </div>
+                </div>
 
-        <!--Check-Out-->
-        <label for="checkout">Check-Out:</label><br><br>
-        <input type="date" id="dates" required> <br><br>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/GatewayHotel.jpg" alt="Gateway Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gateway Hotel, Durban</h5>
+                    </div>
+                </div>
 
-        <input type="submit" value="Compare" id="submit">
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/oceanbreeze.jpg" alt="Ocean Breeze Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ocean Breeze Hotel, Strand</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/protea hotel.jpg" alt="Protea Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Protea Hotel by Marriott, Kimberley</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/radissonblu.jpg" alt="Radisson Blu Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>City Lodge Bloemfontein</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/redsands.jpg" alt="Red Sands Country Lodge">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Red Sand Country Lodge, Kalahari</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="../images/umlilo.jpg" alt="Umlilo Lodge">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Umlilo Lodge, St. Lucia</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouseControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+
+        <form>
+            <!--First Name-->
+            <label for="firstname">First Name:</label><br><br>
+            <input type="text" id="firstname" placeholder="Please enter your first name" required><br><br>
+
+            <!--Surname-->
+            <label for="surname">Surname:</label><br><br>
+            <input type="text" id="surname" placeholder="Please enter your surname" required><br><br>
+
+            <!--Email Address-->
+            <label for="email">Email Address:</label><br><br>
+            <input type="text" id="email" placeholder="Please enter your email address" required><br><br>
+
+            <!--Hotel-->
+            <br><label for="hotel">Select your hotel:</label><br><br>
+            <select name="Hotel" id="select_hotel" placeholder="Select Hotel" required>
+                <option value="default">Default</option>
+                <option value="Oceanbreeze">Ocean Breeze Hotel, Stand</option>
+                <option value="redsand">Red Sand Country Lodge, Kalahari</option>
+                <option value="gameview">Game view Lodge, Vryburg</option>
+                <option value="citylodge">City Lodge, Bloemfontein</option>
+                <option value="umilo">Umilo Lodge, St Lucia</option>
+                <option value="radissonblu">Radisson Blu Hotel, Port Elizabeth</option>
+                <option value="gateway">Gateway Hotel, Durban</option>
+                <option value="protea">Protea by Marriott Hotel, Kimberley</option>
+            </select><br><br>
+
+            <!--Check-Int-->
+            <label for="checkin">Check-In:</label><br><br>
+            <input type="date" id="dates" required> <br><br>
+
+            <!--Check-Out-->
+            <label for="checkout">Check-Out:</label><br><br>
+            <input type="date" id="dates" required> <br><br>
+
+            <a href="http://localhost:8888/booking_app/html/booking.html">
+                <button type="submit" name="compare">Compare</button>
+            </a>
+
+
+        </form>
+
+    </div>
 
 
 
-    </form>
+
+
 </body>
 
 
 
-<script src=""></script>
 
 </html>
