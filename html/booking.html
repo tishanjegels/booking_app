@@ -12,20 +12,46 @@
 </head>
 
 <body>
-    <h1>Hotel Reservation</h1>
+    <h1>Booking</h1>
 
-    <h2>Hotel A</h2>
     <form>
+        <!--First Name-->
+        <label for="firstname">First Name:</label><br><br>
+        <input type="text" id="firstname" placeholder="Please enter your first name" required><br><br>
 
+        <!--Surname-->
+        <label for="surname">Surname:</label><br><br>
+        <input type="text" id="surname" placeholder="Please enter your surname" required><br><br>
 
+        <!--Email Address-->
+        <label for="email">Email Address:</label><br><br>
+        <input type="text" id="email" placeholder="Please enter your email address" required><br><br>
 
-    </form>
+        <!--Hotel-->
+        <br><label for="hotel">Select your hotel:</label><br><br>
+        <select name="Hotel" id="select_hotel" placeholder="Select Hotel" required>
+            <option value="default">Default</option>
+            <option value="Oceanbreeze">Ocean Breeze Hotel, Stand</option>
+            <option value="redsand">Red Sand Country Lodge, Kalahari</option>
+            <option value="gameview">Game view Lodge, Vryburg</option>
+            <option value="citylodge">City Lodge, Bloemfontein</option>
+            <option value="umilo">Umilo Lodge, St Lucia</option>
+            <option value="radissonblu">Radisson Blu Hotel, Port Elizabeth</option>
+            <option value="gateway">Gateway Hotel, Durban</option>
+            <option value="protea">Protea by Marriott Hotel, Kimberley</option>
+        </select><br><br>
 
+        <!--Check-Int-->
+        <label for="checkin">Check-In:</label><br><br>
+        <input type="date" id="dates" required> <br><br>
 
-    <h2>Hotel B</h2>
-    <form>
+        <!--Check-Out-->
+        <label for="checkout">Check-Out:</label><br><br>
+        <input type="date" id="dates" required> <br><br>
 
-
+        <a href="http://localhost:8888/booking_app/html/booking.html">
+            <button type="submit" name="compare">Book</button>
+        </a>
 
     </form>
 
