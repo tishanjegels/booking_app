@@ -7,10 +7,83 @@ body{
 
 h1{
     text-align: center;
-}
-
-
-form{
-    margin: 50px;
     padding: 20px;
 }
+
+form{
+    margin: 30px;
+    padding: 15px
+}
+
+#firstname{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#surname{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#email{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#select_hotel{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#dates{
+    width: 4cm;
+    height: 0.8cm;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#submit{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 20px;
+    background-color: skyblue;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 30px;
+}
+
+img{
+    width: 100%;
+}
+
+/* screen size*/
+@media only screen and (min-width:600px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }
+  
+  @media only screen and (min-width:768px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }
+  
+  @media only screen and (min-width:922px) {
+    body{
+        background-image: linear-gradient(to bottom right,white,#C4F9FF,#87CEEB,#378F80);
+    }
+  }
